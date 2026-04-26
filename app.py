@@ -199,7 +199,59 @@ def home():
                 padding: 25px;
                 background: #020617;
                 color: #94a3b8;
+
             }
+            
+            /* ===== SERVIÇOS ===== */
+.servicos {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.servicos h2 {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.servicos-subtitulo {
+    text-align: center;
+    color: #cbd5e1;
+    font-size: 17px;
+    margin-bottom: 35px;
+}
+
+/* GRID IGUAL AO PORTFÓLIO */
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* CARD MODERNO */
+.servico-card {
+    background: #1e293b;
+    border-radius: 14px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.30);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servico-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.40);
+}
+
+.servico-card h3 {
+    color: #93c5fd;
+    margin-bottom: 10px;
+}
+
+.servico-card p {
+    color: #e2e8f0;
+    line-height: 1.6;
+}
         </style>
     </head>
 
@@ -213,9 +265,8 @@ def home():
             <h1>Criação de Sites Profissionais <br> e Desenvolvimento Web</h1>
 
             <p>
-                Transformo ideias em soluções digitais modernas, funcionais e responsivas.
-                Ajudo profissionais, pequenos negócios e empresas a terem presença digital com
-                sites, landing pages, sistemas e aplicações web/mobile.
+                Transformo idéias em soluções digitais e Funcionais. Ajudo pessoas, negócios e empresas a terem presença digital com
+                sites, landing pages, sistemas e aplicações mobile.
             </p>
 
             <a class="botao" href="https://wa.me/5551981686819" target="_blank">
