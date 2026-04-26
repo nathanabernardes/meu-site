@@ -100,13 +100,83 @@ def home():
                 background: #020617;
                 color: #94a3b8;
             }
-        </style>
+            /* ===== PORTFÓLIO ===== */
+.portfolio {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.portfolio h2 {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.portfolio-subtitulo {
+    text-align: center;
+    color: #cbd5e1;
+    font-size: 17px;
+    margin-bottom: 35px;
+}
+       
+       /* ===== CARROSSEL ===== */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 16px;
+    width: max-content; /* 🔥 ESSENCIAL */
+    animation: scroll 25s linear infinite;
+}
+
+.carousel-card {
+    flex: 0 0 auto; /* 🔥 NÃO QUEBRA LINHA */
+    width: 180px;
+    background: #1e293b;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.30);
+    transition: transform 0.3s ease;
+}
+
+.carousel-card:hover {
+    transform: translateY(-6px);
+}
+
+.carousel-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.carousel-card h3 {
+    text-align: center;
+    padding: 10px;
+    color: #93c5fd;
+    font-size: 14px;
+}
+.carousel-card {
+/* 🔥 ANIMAÇÃO */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+} 
+          </style>
     </head>
 
     <body>
 
         <header>
-            <h1>Criação de Sites, Aplicações Web e Mobile</h1>
+
+            <h1> Criação de Sites Profissionais <br> e Desenvolvimento Web </h1>
             <p>
                 Transformo ideias em soluções digitais modernas, funcionais e responsivas.
                 Ajudo profissionais, pequenos negócios e empresas a terem presença digital com
@@ -142,15 +212,62 @@ def home():
             </div>
         </section>
 
-        <section class="sobre">
-            <h2>Sobre mim</h2>
-            <p>
-                Sou Nathana Bernardes, desenvolvedora apaixonada por tecnologia e criação de soluções digitais.
-                Trabalho com desenvolvimento de projetos que ajudam pessoas e empresas a se posicionarem melhor
-                na internet.
-            </p>
-        </section>
+        <section class="portfolio">
+    <h2>Portfólio</h2>
+    <p class="portfolio-subtitulo">
+        Catálogo de modelos de sites, lojas, plataformas e aplicativos.
+    </p>
 
+    <div class="carousel">
+        <div class="carousel-track">
+
+            <div class="carousel-card">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Site profissional">
+                <h3>Sites</h3>
+            </div>
+
+            <div class="carousel-card">
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=600&q=80" alt="Loja virtual">
+                <h3>Lojas</h3>
+            </div>
+
+            <div class="carousel-card">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Plataforma web">
+                <h3>Plataformas</h3>
+            </div>
+
+            <div class="carousel-card">
+                <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=600&q=80" alt="Aplicativo mobile">
+                <h3>Apps</h3>
+            </div>
+
+            <div class="carousel-card">
+                <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=600&q=80" alt="Sistema web">
+                <h3>Sistemas</h3>
+            </div>
+
+            <!-- repetição para carrossel contínuo -->
+            <div class="carousel-card">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Site profissional">
+                <h3>Sites</h3>
+            </div>
+
+            <div class="carousel-card">
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=600&q=80" alt="Loja virtual">
+                <h3>Lojas</h3>
+            </div>
+
+            <div class="carousel-card">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Plataforma web">
+                <h3>Plataformas</h3>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+        
         <section class="diferenciais">
             <h2>Diferenciais</h2>
             <span>Design responsivo</span>
